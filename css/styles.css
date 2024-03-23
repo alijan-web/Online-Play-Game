@@ -1,0 +1,144 @@
+.container-fluid img {
+  width: 70px;
+  height: auto;
+}
+
+.heading-box {
+  background-color: #dddddd;
+  /* Background color of the box */
+  padding: 20px;
+  /* Padding around the heading */
+  color: #000000;
+  margin-top: 70px;
+}
+
+.beautiful-heading {
+  font-size: 26px;
+  /* Font size of the heading */
+  color: #333;
+  /* Text color of the heading */
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  .heading-box {
+    padding: 10px;
+    /* Adjust padding for smaller screens */
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+
+.container-fluid a {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media (max-width: 768px) {
+  .container-fluid a {
+    font-size: 23px;
+  }
+  .container-fluid img {
+    width: 50px;
+    height: auto;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Adjust the column size as needed */
+  gap: 20px;
+  /* Adjust the gap between grid items */
+  color: black;
+  margin-top: 10px;
+}
+
+.grid-item {
+  background-color: #dee1e3;
+  /* Background color of each grid item */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  /* Smooth transition effect */
+}
+
+.grid-item a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  /* Scale up on hover */
+}
+
+.thumb.playable {
+  width: 170px;
+  /* Adjust the width of the thumbnail image */
+  height: auto;
+  /* Maintain aspect ratio */
+  color: black;
+}
+
+.footer {
+  background-color: #1c1c1b; /* Background color of the footer */
+  color: #fff; /* Text color of the footer */
+  padding: 20px 0; /* Padding at the top and bottom of the footer */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.footer-section {
+  flex: 1; /* Each section takes equal space */
+  padding: 0 20px; /* Padding around each section */
+  max-width: 300px; /* Maximum width of each section */
+}
+
+.footer-section h2 {
+  font-size: 20px; /* Font size of section headings */
+  margin-bottom: 10px; /* Bottom margin for section headings */
+  color: #cece11;
+}
+
+.footer-section p {
+  margin-bottom: 10px; /* Bottom margin for paragraphs */
+}
+
+.footer-section ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.footer-section ul li {
+  margin-bottom: 5px; /* Bottom margin for list items */
+}
+
+.footer-section ul li a {
+  color: #fff; /* Text color of links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    max-width: 100%; /* Full width on smaller screens */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center align content on smaller screens */
+  }
+  .footer {
+    padding: 10px 0; /* Padding at the top and bottom of the footer */
+  }
+  .footer-section h2 {
+    font-size: 18px; /* Font size of section headings */
+  }
+  .footer-section p {
+    font-size: 13px; /* Bottom margin for paragraphs */
+  }
+}
